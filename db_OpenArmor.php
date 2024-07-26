@@ -5,13 +5,11 @@
  * This program is free software; Distributed under the terms of the GNU GPL v3.
  */
 
-if ( ! defined('DB_USER_O') )
-	{	define ('DB_USER_O', 'OpenArmor');
-		define ('DB_PASSWORD_O', 'User_OpenArmor_1234');
-		define ('DB_HOST_O', '192.168.2.2');
-		define ('DB_NAME_O', 'OpenArmor_base');
-		define ('DB_TYPE_O', 'running');
-#		define ('DB_TYPE_O', 'history');	
+ if (!defined('AUTH_USER_O')) {
+    define('AUTH_USER_O', 'openarmor_user');         // Updated username
+    define('AUTH_PASSWORD_O', 'password');           // Updated password
+    define('AUTH_HOST_O', 'localhost');              // Host remains the same if MySQL is local
+    define('AUTH_NAME_O', 'openarmor_db');  	
 	}
 $VERSION = "V3.0";
 try {
